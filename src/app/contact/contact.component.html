@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="abc">
+<br>
+<br><br>
+
+<br>
+    <div class="head" ><h1>Contact Us</h1></div>
+</div>
+
+    
+
+<div class="m1">
+    <div class="container">  
+
+        <form id="contact" action="" method="get">
+          <h3> TravelLove❤️</h3>
+          <h4>Contact us </h4>
+
+
+
+
+          <fieldset>
+            <input placeholder="Your name" id="name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+       
+      
+          <fieldset>
+            <input type="email" placeholder="Your Email Address" tabindex="2"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+          </fieldset>
+          <fieldset>
+            <label name="BOD">Appoinment Date    </label>
+          <input type="date" id="start" name="trip-start" required >
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" type="tel" tabindex="3" required  pattern="^\d{10}$">
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Address(optional)" type="text" tabindex="4">
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+         
+
+
+        </form>
+      </div>
+
+      <div class="m1">
+        <h1 style="text-align: center;">Location</h1>
+        <div class="map" style="margin: auto; height: 50%;width: 50%;">
+        <iframe width="100%" height="360" marg frameborder="0" scrolling="no" marginheight="auto" marginwidth="auto" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Pune%20+(blog)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          <a href="https://www.gps.ie/sport-gps/">gps</a>
+        </iframe>
+      </div>
+      </div>
+
+      <div class="center">
+        <div class="pagination">
+          <br>
+            <a routerLink="/photo">&laquo;</a>
+          
+           <a routerLink="/home">1</a>
+           <a routerLink="/about">2</a>
+          <a routerLink="/destination">3</a>
+        <a routerLink="/photo">4</a>
+        <a class="active" routerLink="/contact">5</a>
+        <a routerLink="/http">6</a>
+        
+        <a routerLink="/http">&raquo;</a>
+    </div>
+  </div>
+    <router-outlet></router-outlet>
+  
+  <br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+    </body>
+    </html>
